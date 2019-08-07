@@ -60,9 +60,9 @@
   "sourceMap": "78:481:0:-;;;203:29;8:9:-1;5:2;;;30:1;27;20:12;5:2;203:29:0;78:481;;;;;;",
   "deployedSourceMap": "78:481:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;109:43;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;109:43:0;;;;;;;;;;;;;;;;;;;;;;;461:95;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;461:95:0;;;;;;;295:99;;8:9:-1;5:2;;;30:1;27;20:12;5:2;295:99:0;;;;109:43;;;;;;;;;;;;;;:::o;461:95::-;527:10;518:8;:20;;;;;;;;;;:30;461:95::o;295:99::-;374:10;337:7;365:20;;;;;;;;;;;295:99;:::o",
   "source": "pragma solidity ^0.4.24;\r\n\r\n/**\r\n * @title Simple Sample Smart Contract\r\n */\r\ncontract SimpleSample {\r\n\r\n    mapping(address => bytes32) public messages;\r\n\r\n    /**\r\n     * @dev Constructor\r\n    */\r\n    constructor() public {\r\n    }\r\n\r\n    /**\r\n     * Get the message for the user\r\n     */\r\n    function getMessage() public view returns(bytes32) {\r\n        return (messages[msg.sender]);\r\n    }\r\n    \r\n    /**\r\n     * Set the message for the user\r\n     */\r\n    function setMessage(bytes32 messageIn) public {\r\n        messages[msg.sender]=messageIn;\r\n    }\r\n}",
-  "sourcePath": "D:\\Projects\\Blockchain\\MLGBlockchain\\USDVault\\contracts\\SimpleSample.sol",
+  "sourcePath": "D:\\Projects\\Blockchain\\DIYBlockchain\\USDVault\\contracts\\SimpleSample.sol",
   "ast": {
-    "absolutePath": "/D/Projects/Blockchain/MLGBlockchain/USDVault/contracts/SimpleSample.sol",
+    "absolutePath": "/D/Projects/Blockchain/DIYBlockchain/USDVault/contracts/SimpleSample.sol",
     "exportedSymbols": {
       "SimpleSample": [
         35
